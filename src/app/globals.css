@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+}
+
+/* @layer base {
+    html {
+        background-color: violet;
+        font-family: "Nunito Sans", sans-serif;
+      }
+} */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --nexia-background: #3d747d;
+  --nexia-button: #43b9ce;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --nexia-background: #3d747d;
+    --nexia-button: #43b9ce;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nexiaBg1 {
+  background-color: #3d747d;
+}
+
+.nexiaBg2 {
+  background-color: #43b9ce;
+}
+.nexiaBt1 {
+  color: #3d747d;
+}
+
+.nexiaBt2 {
+  color: #43b9ce;
+}
+
+.white-svg {
+  color: "#ffffff";
+}
+
+.black-nexia1 {
+  color: #1b3236;
+}
+.black-nexia2 {
+  background-color: #1b3236;
+}
+.title-text {
+  @apply col-span-2 md:col-span-1 text-3xl md:text-5xl mb-8;
+}
+.custom-shadow {
+  box-shadow: 0px -2px 16px 4px rgba(118, 191, 199, 0.05),
+    0px 4px 16px 4px rgba(118, 191, 199, 0.05);
+}
