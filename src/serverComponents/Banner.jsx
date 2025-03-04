@@ -17,8 +17,8 @@ export default function Banner() {
         >
           <div className="hidden col-span-3 md:flex justify-between items-center text-white w-full">
             <div className="flex justify-evenly items-center gap-8">
-              <div>
-                <Image src={logo} alt="logo" width={350} height={200}></Image>
+              <div className="relative min-w-[250px] min-h-[50px]">
+                <Image src={logo} alt="logo" fill sizes="100vw"></Image>
               </div>
               <div className="flex justify-evenly gap-4">
                 <span>Specialization</span>
@@ -26,11 +26,11 @@ export default function Banner() {
                 <span>Discover</span>
               </div>
             </div>
-            <div className="flex gap-4">
-              <button className="text-base font-bold text-white nexiaBg2 rounded-4xl py-2  px-7 md:px-9">
+            <div className="flex gap-3">
+              <button className="text-xs font-bold text-white nexiaBg2 rounded-4xl py-2  px-5 md:px-4">
                 CREATE A PRACTITIONER PROFILE
               </button>
-              <button className="text-base font-bold text-white bg-transparent border border-white rounded-4xl py-2  px-7 md:px-9">
+              <button className="text-xs font-bold text-white bg-transparent border border-white rounded-4xl py-2  px-2 md:px-4">
                 LOG IN / SIGN UP
               </button>
             </div>
