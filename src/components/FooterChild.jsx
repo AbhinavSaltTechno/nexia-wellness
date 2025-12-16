@@ -14,7 +14,7 @@ export default function FooterChild({ head, links = [], icons = [] }) {
             <Image
               className="invert dark:invert md:hidden"
               src="assets/downArrow.svg"
-              alt="Next.js logo or something"
+              alt="Next.js logo or something aa"
               width={18}
               height={18}
               priority
